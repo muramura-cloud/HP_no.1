@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>模写サイト_ver3</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+  <!--header-->
+  <header>
+    <div class="logo">
+      <h1><a href="index.html"><img class="img-logo" src="img/logo.png" alt="ロゴ画像"></a></h1>
+    </div>
+    <div class="social-btn-box d-md-flex d-none align-items-center">
+      <p><i class="fas fa-phone"></i>04-7183-1120</p>
+      <ul class="social-btn-list d-md-flex">
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+      </ul>
+    </div>
+  </header>
+  <!--navigation-->
+  <nav id="nav" class="navbar navbar-expand-md sticky-top">
+    <div class="container d-md-flex justify-content-between mt-2">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav nav-contact-box mx-auto order-md-2">
+        <li class="nav-item nav-contact-item"><a href="#contact" class="btn nav-link nav-contact-link">資料請求・お問い合わせ</a></li>
+        <li class="nav-item nav-contact-item"><a href="#visit" class="btn nav-link nav-contact-link">見学のお申し込み</a></li>
+      </ul>
+      <div id="navbar-content" class="collapse navbar-collapse order-md-1">
+        <ul class="navbar-nav nav-introduce-box text-center">
+          <li class="nav-item nav-introduce-item"><a href="index.html" class="nav-link nav-introduce-link">トップ</a></li>
+          <li class="nav-item nav-introduce-item"><a href="facility.html" class="nav-link nav-introduce-link">施設紹介</a></li>
+          <li class="nav-item nav-introduce-item"><a href="teacher.html" class="nav-link nav-introduce-link">職員・インストラクターの紹介</a></li>
+          <li class="nav-item dropdown nav-introduce-item">
+            <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle nav-introduce-link" data-toggle="dropdown">事業内容</a>
+            <div class="dropdown-menu text-center">
+              <a href="care.html" class="dropdown-item">介護予防事業</a>
+              <a href="yoga.html" class="dropdown-item">運動教室・ヨガ教室</a>
+              <a href="cafe.html" class="dropdown-item">カフェ</a>
+            </div>
+          </li>
+          <li class="nav-item nav-introduce-item"><a href="company.html" class="nav-link nav-introduce-link">会社概要</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--breadcrumb-->
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html">トップ</a></li>
+      <li class="breadcrumb-item"><a class="breadcrumb-link" href="serviceall.html">事業内容</a></li>
+      <li class="breadcrumb-item"><a class="breadcrumb-link" href="company.html">運動教室・ヨガ教室</a></li>
+    </ol>
+  </nav>
+  <!--main-start-->
+  <main id="main">
+    <!--yoga-->
+    <section id="yoga">
+      <div class="yoga-heading-box text-center rotate-heading">
+        <h2 class="heading yoga-heading wow fadeIn" data-wow-delay="0.5s" data-wow-duaration="2s">運動教室<span class="d-md-none">・</span><br class="d-none d-md-block">ヨガ教室</h2>
+        <p class="text-muted">健康増進プログラム</p>
+      </div>
+      <div class="yoga-eyecatch-box">
+        <div class="yoga-eyecatch-right-box ml-md-auto">
+          <h3 class="yoga-eyecatch-title wow fadeInRight" data-wow-delay="0.5s" data-wow-duaration="2s">
+            16歳以上を対象に、<br>どなたでも参加可能な健康増進プログラムを開催しております。
+          </h3>
+          <p class="yoga-eyecatch-text text-center">
+            初めての方には無料体験を行っております。<br>お気軽にご参加下さい！
+          </p>
+          <p class="charge-btn-box text-center mb-0">
+            <a href="#charge" class="btn charge-btn">料金について</a>
+          </p>
+          <p class="time-table-btn-box text-center mb-0">
+            <a href="timetable.html" class="btn time-table-btn">スケジュールはこちら</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--yoga-content-->
+    <section id="yoga-content">
+      <div class="yoga-content-heading-box text-center rotate-heading">
+        <h2 class="heading yoga-content-heading wow fadeIn" data-wow-delay="0.5s" data-wow-duaration="2s">
+          サービス<br class="d-none d-md-block">内容
+        </h2>
+        <p class="text-muted">program</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!--yoga-content-start-->
+          <div class="col-6 col-md-4">
+            <div class="yoga-content-box">
+              <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+              <div class="d-md-flex justify-content-between align-items-center text-center">
+                <p class="yoga-content-name text-center">健康のための体操教室</p>
+                <button type="button" class="btn yoga-more-btn" data-toggle="modal" data-target="#yoga-content1">
+                  詳しく
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--modal-->
+          <div class="modal fade" id="yoga-content1" tabindex="-1" role="dialog" aria-labelledby="yoga-contet" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content yoga-modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title yoga-modal-title text-center" id="exampleModal3Label">健康のための体操教室</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row align-items-center">
+                    <div class="col-5">
+                      <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+                    </div>
+                    <div class="col-7">
+                      <strong class="yoga-content-date">
+                        木曜日 9:30～10:30（60分）<br>
+                        金曜日 14:00～15:00（60分
+                      </strong>
+                      <p class="yoga-content-explain">
+                        65歳以上の方に向けた健康増進プログラムです。<br>
+                        運動の基礎が学べるクラスです。<br>
+                        血流の滞りや関節の動きを改善するストレッチや体操を行います。「身体を鍛えるため」ではなく「身体の機能を取り戻すため」に気持ち良く動いていくので、運動に不慣れな方や初心者の方も安心してご参加頂けます。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn yoga-close-btn" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--yoga-content-end-->
+          <!--yoga-content-start-->
+          <div class="col-6 col-md-4">
+            <div class="yoga-content-box">
+              <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+              <div class="d-md-flex justify-content-between align-items-center text-center">
+                <p class="yoga-content-name text-center">健康のための太極拳24式</p>
+                <button type="button" class="btn yoga-more-btn" data-toggle="modal" data-target="#yoga-content2">
+                  詳しく
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--modal-->
+          <div class="modal fade" id="yoga-content2" tabindex="-1" role="dialog" aria-labelledby="yoga-contet" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content yoga-modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title yoga-modal-title text-center" id="exampleModal3Label">健康のための太極拳24式</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row align-items-center">
+                    <div class="col-5">
+                      <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+                    </div>
+                    <div class="col-7">
+                      <strong class="yoga-content-date">
+                        木曜日 9:30～10:30（60分）<br>
+                        金曜日 14:00～15:00（60分
+                      </strong>
+                      <p class="yoga-content-explain">
+                        65歳以上の方に向けた健康増進プログラムです。<br>
+                        運動の基礎が学べるクラスです。<br>
+                        血流の滞りや関節の動きを改善するストレッチや体操を行います。「身体を鍛えるため」ではなく「身体の機能を取り戻すため」に気持ち良く動いていくので、運動に不慣れな方や初心者の方も安心してご参加頂けます。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn yoga-close-btn" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--yoga-content-end-->
+          <!--yoga-content-start-->
+          <div class="col-6 col-md-4">
+            <div class="yoga-content-box">
+              <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+              <div class="d-md-flex justify-content-between align-items-center text-center">
+                <p class="yoga-content-name text-center">陰ヨガ</p>
+                <button type="button" class="btn yoga-more-btn" data-toggle="modal" data-target="#yoga-content3">
+                  詳しく
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--modal-->
+          <div class="modal fade" id="yoga-content3" tabindex="-1" role="dialog" aria-labelledby="yoga-contet" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content yoga-modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title yoga-modal-title text-center" id="exampleModal3Label">陰ヨガ</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row align-items-center">
+                    <div class="col-5">
+                      <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+                    </div>
+                    <div class="col-7">
+                      <strong class="yoga-content-date">
+                        木曜日 9:30～10:30（60分）<br>
+                        金曜日 14:00～15:00（60分
+                      </strong>
+                      <p class="yoga-content-explain">
+                        65歳以上の方に向けた健康増進プログラムです。<br>
+                        運動の基礎が学べるクラスです。<br>
+                        血流の滞りや関節の動きを改善するストレッチや体操を行います。「身体を鍛えるため」ではなく「身体の機能を取り戻すため」に気持ち良く動いていくので、運動に不慣れな方や初心者の方も安心してご参加頂けます。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn yoga-close-btn" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--yoga-content-end-->
+          <!--yoga-content-start-->
+          <div class="col-6 col-md-4">
+            <div class="yoga-content-box">
+              <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+              <div class="d-md-flex justify-content-between align-items-center text-center">
+                <p class="yoga-content-name text-center">整形外科ヨガ</p>
+                <button type="button" class="btn yoga-more-btn" data-toggle="modal" data-target="#yoga-content4">
+                  詳しく
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--modal-->
+          <div class="modal fade" id="yoga-content4" tabindex="-1" role="dialog" aria-labelledby="yoga-contet" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content yoga-modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title yoga-modal-title text-center" id="exampleModal3Label">整形外科ヨガ</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row align-items-center">
+                    <div class="col-5">
+                      <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+                    </div>
+                    <div class="col-7">
+                      <strong class="yoga-content-date">
+                        木曜日 9:30～10:30（60分）<br>
+                        金曜日 14:00～15:00（60分
+                      </strong>
+                      <p class="yoga-content-explain">
+                        65歳以上の方に向けた健康増進プログラムです。<br>
+                        運動の基礎が学べるクラスです。<br>
+                        血流の滞りや関節の動きを改善するストレッチや体操を行います。「身体を鍛えるため」ではなく「身体の機能を取り戻すため」に気持ち良く動いていくので、運動に不慣れな方や初心者の方も安心してご参加頂けます。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn yoga-close-btn" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--yoga-content-end-->
+          <!--yoga-content-start-->
+          <div class="col-6 col-md-4">
+            <div class="yoga-content-box">
+              <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+              <div class="d-md-flex justify-content-between align-items-center text-center">
+                <p class="yoga-content-name text-center">ヒーリングヨガ</p>
+                <button type="button" class="btn yoga-more-btn" data-toggle="modal" data-target="#yoga-content5">
+                  詳しく
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--modal-->
+          <div class="modal fade" id="yoga-content5" tabindex="-1" role="dialog" aria-labelledby="yoga-contet" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content yoga-modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title yoga-modal-title text-center" id="exampleModal3Label">ヒーリングヨガ</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row align-items-center">
+                    <div class="col-5">
+                      <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+                    </div>
+                    <div class="col-7">
+                      <strong class="yoga-content-date">
+                        木曜日 9:30～10:30（60分）<br>
+                        金曜日 14:00～15:00（60分
+                      </strong>
+                      <p class="yoga-content-explain">
+                        65歳以上の方に向けた健康増進プログラムです。<br>
+                        運動の基礎が学べるクラスです。<br>
+                        血流の滞りや関節の動きを改善するストレッチや体操を行います。「身体を鍛えるため」ではなく「身体の機能を取り戻すため」に気持ち良く動いていくので、運動に不慣れな方や初心者の方も安心してご参加頂けます。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn yoga-close-btn" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--yoga-content-end-->
+          <!--yoga-content-start-->
+          <div class="col-6 col-md-4">
+            <div class="yoga-content-box">
+              <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+              <div class="d-md-flex justify-content-between align-items-center text-center">
+                <p class="yoga-content-name text-center">B-ファイティング</p>
+                <button type="button" class="btn yoga-more-btn" data-toggle="modal" data-target="#yoga-content6">
+                  詳しく
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--modal-->
+          <div class="modal fade" id="yoga-content6" tabindex="-1" role="dialog" aria-labelledby="yoga-contet" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content yoga-modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title yoga-modal-title text-center" id="exampleModal3Label">B-ファイティング</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row align-items-center">
+                    <div class="col-5">
+                      <img src="img/yoga2.png" alt="ヨガコンテンツの画像" class="img-yoga-content img-fluid">
+                    </div>
+                    <div class="col-7">
+                      <strong class="yoga-content-date">
+                        木曜日 9:30～10:30（60分）<br>
+                        金曜日 14:00～15:00（60分
+                      </strong>
+                      <p class="yoga-content-explain">
+                        65歳以上の方に向けた健康増進プログラムです。<br>
+                        運動の基礎が学べるクラスです。<br>
+                        血流の滞りや関節の動きを改善するストレッチや体操を行います。「身体を鍛えるため」ではなく「身体の機能を取り戻すため」に気持ち良く動いていくので、運動に不慣れな方や初心者の方も安心してご参加頂けます。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn yoga-close-btn" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--yoga-content-end-->
+        </div>
+      </section>
+    </section>
+    <!--charge-->
+    <section id="charge">
+      <div class="charge-heading-box text-center rotate-heading">
+        <h2 class="heading charge-heading wow fadeIn" data-wow-delay="0.5s" data-wow-duaration="2s">料金</h2>
+        <p class="text-muted">charge</p>
+      </div>
+      <div class="container">
+        <p class="charge-explain text-center">
+          レッスンはすべてポイント制で清算させていただきます。<br>
+          <strong>60分レッスンは<span class="text-danger">2</span>ポイント</strong><br>
+          <strong>75分レッスンは<span class="text-danger">3</span>ポイント</strong>
+        </p>
+        <table class="charge-table text-center mx-auto">
+          <tr>
+            <th>≪チャレンジチケット≫</th>
+            <th class="popular">≪しっかりチケット≫</th>
+            <th>≪たっぷりチケット≫</th>
+          </tr>
+          <tr>
+            <td class="money">5,400円（税込）</td>
+            <td class="money">10,800円（税込）</td>
+            <td class="money">16,200円（税込）</td>
+          </tr>
+          <tr>
+            <td>（10ポイント）</td>
+            <td class="popular">（21ポイント）1ポイントお得！</td>
+            <td>（33ポイント）3ポイントお得！</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+  <!--main-end-->
+  <!--footer-->
+  <footer>
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-md-3">
+          <div class="footer-logo">
+            <a class="d-block text-center" href="#"><img class="img-footer" src="img/icon_logo.png" alt="フッターのロゴ画像"></a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <ul class="d-md-flex footer-social-media justify-content-md-end">
+            <li class="text-center"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="text-center"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><p class="tel text-center"><i class="fas fa-phone"></i>04-7183-1120</p></li>
+          </ul>
+          <ul class="nav footer-nav ml-md-auto d-flex flex-column flex-md-row text-center">
+            <li class="nav-item footer-nav-item">
+              <a href="facility.html" class="nav-link footer-nav-link">施設紹介</a>
+            </li>
+            <li class="nav-item footer-nav-item">
+              <a href="teacher.html" class="nav-link footer-nav-link">
+                職員・インストラクター <br class="d-block d-md-none">の紹介
+              </a>
+            </li>
+            <li class="nav-item footer-nav-item dropdown btn-group dropup">
+              <a id="footerNavbarDropdown" href="serviceall.html" class="nav-link footer-nav-link dropdown-toggle" data-toggle="dropdown">
+                事業内容
+              </a>
+              <div class="dropdown-menu">
+                <a href="care.html" class="dropdown-item">介護予防事業</a>
+                <a href="yoga.html" class="dropdown-item">運動教室・ヨガ教室</a>
+                <a href="cafe.html" class="dropdown-item">カフェ</a>
+              </div>
+            </li>
+            <li class="nav-item footer-nav-item d-md-none">
+              <a href="serviceall.html" class="nav-link footer-nav-link">事業内容</a>
+            </li>
+            <li class="nav-item footer-nav-item">
+              <a href="company.html" class="nav-link footer-nav-link">会社概要</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center copy">
+        <small>Copyright © 介護予防・通所介護なら我孫子市にあるけんこうかん ソレイユ. All Rights Reserved.</small>
+      </p>
+    </div>
+  </footer>
+  <!--page-top-btn-->
+  <div id="top_scroll">
+    <a href="#" id="page-top1"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>

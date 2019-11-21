@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>模写サイト_ver3</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+  <!--header-->
+  <header>
+    <div class="logo">
+      <h1><a href="index.html"><img class="img-logo" src="img/logo.png" alt="ロゴ画像"></a></h1>
+    </div>
+    <div class="social-btn-box d-md-flex d-none align-items-center">
+      <p><i class="fas fa-phone"></i>04-7183-1120</p>
+      <ul class="social-btn-list d-md-flex">
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+      </ul>
+    </div>
+  </header>
+  <!--navigation-->
+  <nav id="nav" class="navbar navbar-expand-md sticky-top">
+    <div class="container d-md-flex justify-content-between mt-2">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav nav-contact-box mx-auto order-md-2">
+        <li class="nav-item nav-contact-item"><a href="#contact" class="btn nav-link nav-contact-link">資料請求・お問い合わせ</a></li>
+        <li class="nav-item nav-contact-item"><a href="#visit" class="btn nav-link nav-contact-link">見学のお申し込み</a></li>
+      </ul>
+      <div id="navbar-content" class="collapse navbar-collapse order-md-1">
+        <ul class="navbar-nav nav-introduce-box text-center">
+          <li class="nav-item nav-introduce-item"><a href="index.html" class="nav-link nav-introduce-link">トップ</a></li>
+          <li class="nav-item nav-introduce-item"><a href="facility.html" class="nav-link nav-introduce-link">施設紹介</a></li>
+          <li class="nav-item nav-introduce-item"><a href="teacher.html" class="nav-link nav-introduce-link">職員・インストラクターの紹介</a></li>
+          <li class="nav-item dropdown nav-introduce-item">
+            <a id="navbarDropdown" href="service.html" class="nav-link dropdown-toggle nav-introduce-link" data-toggle="dropdown">事業内容</a>
+            <div class="dropdown-menu text-center">
+              <a href="care.html" class="dropdown-item">介護予防事業</a>
+              <a href="yoga.html" class="dropdown-item">運動教室・ヨガ教室</a>
+              <a href="cafe.html" class="dropdown-item">カフェ</a>
+            </div>
+          </li>
+          <li class="nav-item nav-introduce-item"><a href="company.html" class="nav-link nav-introduce-link">会社概要</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--slide-eyecatch-->
+  <div id="slide">
+    <ul class="slide-box">
+      <li class="slide-item"><img class="img-slide" src="img/0.jpg" alt="スライド画像"></li>
+      <li class="slide-item"><img class="img-slide" src="img/1.jpg" alt="スライド画像"></li>
+      <li class="slide-item"><img class="img-slide" src="img/2.jpg" alt="スライド画像"></li>
+      <li class="slide-item"><img class="img-slide" src="img/3.jpg" alt="スライド画像"></li>
+    </ul>
+  </div>
+  <!--main-start-->
+  <main id="main">
+    <!--about-->
+    <section id="about">
+      <div class="about-heading-box text-center rotate-heading">
+        <p class="text-muted">けんこうかん</p>
+        <h2 class="heading about-heading wow fadeIn" data-wow-delay = "0.5s" data-wow-duration = "2s">ラ・テールとは</h2>
+      </div>
+      <div class="about-box">
+        <div class="about-right-box ml-md-auto">
+          <h3 class="about-title wow fadeInLeft" data-wow-delay = "0.5s" data-wow-duration = "2s">「健康と運動」を題材とした<br>サービスを提供しております。</h3>
+          <p class="about-text">
+            運動と言っても、汗をかいたりエネルギーを消費する事だけを目的とするのではなく
+            <span class="marker-pink font-weight-bold">「頑張らない」</span>
+            <span class="marker-pink font-weight-bold">「心地よく身体を動かす」</span>
+            <span class="marker-pink font-weight-bold">「身体本来の機能を取り戻す」</span>
+            をテーマにしています。<br>
+            主に健康増進施設”けんこうかんソレイユ”を運営し地域の方々の健康をサポートさせて頂きます。
+          </p>
+          <p class="about-btn-box text-center mb-0">
+            <a href="serviceall.html" class="btn about-btn">サービスについて</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--service-->
+    <section id="service">
+      <div class="container">
+        <div class="service-heading-box text-center rotate-heading">
+          <h2 class="heading service-heading wow fadeIn" data-wow-delay = "0.5s" data-wow-duration = "2s">事業内容</h2>
+          <p class="text-muted">三つのサービス</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 service-box text-center prevention wow fadeInUp" data-wow-delay = "0.5s" data-wow-duration = "2s">
+            <h3 class="service-title">介護予防事業</h3>
+            <div class="service-img-box">
+              <img src="img/service.gif" alt="サービス画像" class="img-service img-fluid">
+            </div>
+            <p class="service-balloon">将来に備える</p>
+            <h4 class="service-subtitle">トレーニング！</h4>
+            <p class="service-text">
+              檜の香りが漂う癒しの空間で、のびのびと気持ち良く体を動かしていきます。「頑張らずに気持ち良く」「血流を良くし、体本来の機能を取り戻すため」の運動プログラムが特徴です。
+            </p>
+            <a href="care.html" class="btn service-btn">詳細と料金について</a>
+          </div>
+          <div class="col-md-4 service-box text-center yoga wow fadeInUp" data-wow-delay = "0.7s" data-wow-duration = "2s">
+            <h3 class="service-title">運動教室・ヨガ教室</h3>
+            <div class="service-img-box">
+              <img src="img/service.gif" alt="サービス画像" class="img-service img-fluid">
+            </div>
+            <p class="service-balloon">楽しい</p>
+            <h4 class="service-subtitle">体操とヨガ</h4>
+            <p class="service-text">
+              檜の香りが漂う癒しの空間で、のびのびと気持ち良く体を動かしていきます。「頑張らずに気持ち良く」「血流を良くし、体本来の機能を取り戻すため」の運動プログラムが特徴です。
+            </p>
+            <a href="yoga.html" class="btn service-btn">詳細と料金について</a>
+          </div>
+          <div class="col-md-4 service-box text-center cafe wow fadeInUp" data-wow-delay = "1s" data-wow-duration = "2s">
+            <h3 class="service-title">カフェ</h3>
+            <div class="service-img-box">
+              <img src="img/service.gif" alt="サービス画像" class="img-service img-fluid">
+            </div>
+            <p class="service-balloon">ゆったりした空間</p>
+            <h4 class="service-subtitle">美味しいカフェ</h4>
+            <p class="service-text">
+              檜の香りが漂う癒しの空間で、のびのびと気持ち良く体を動かしていきます。「頑張らずに気持ち良く」「血流を良くし、体本来の機能を取り戻すため」の運動プログラムが特徴です。
+            </p>
+            <a href="cafe.html" class="btn service-btn">詳細と料金について</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--news-->
+    <section id="news">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mx-auto">
+            <a href="news.html">
+              <div class="news-heading-box rotate-heading">
+                <h2 class="heading news-heading wow fadeIn" data-wow-delay = "0.5s" data-wow-duration = "2s">お知らせ</h2>
+                <p class="text-muted">新着情報</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-9">
+            <div class="row news-box text-center">
+              <dt class="col-md-3 news-head">2019年○月○日</dt>
+              <dd class="col-md-9 news-data">
+                <a href="news.html">○○クーポン配布中です。</a>
+                <span class="category category-news">NEWS</span>
+              </dd>
+              <dt class="col-md-3 news-head">2019年○月○日</dt>
+              <dd class="col-md-9 news-data">
+                <a href="news.html">○○クーポン配布中です。</a>
+                <span class="category category-topic">TOPIC</span>
+              </dd>
+              <dt class="col-md-3 news-head">2019年○月○日</dt>
+              <dd class="col-md-9 news-data">
+                <a href="news.html">○○クーポン配布中です。</a>
+                <span class="category category-news">NEWS</span>
+              </dd>
+              <dt class="col-md-3 news-head">2019年○月○日</dt>
+              <dd class="col-md-9 news-data">
+                <a href="news.html">○○クーポン配布中です。</a>
+                <span class="category category-topic">TOPIC</span>
+              </dd>
+              <dt class="col-md-3 news-head">2019年○月○日</dt>
+              <dd class="col-md-9 news-data">
+                <a href="news.html">○○クーポン配布中です。</a>
+                <span class="category category-news">NEWS</span>
+              </dd>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--review-->
+    <section id="reviews">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center order-md-2">
+            <a href="news.html">
+              <div class="reviews-heading-box rotate-heading">
+                <h2 class="heading reviews-heading wow fadeIn" data-wow-delay = "0.5s" data-wow-duration = "2s">お客様の<strong class="voice">声</strong></h2>
+                <p class="text-muted">体験した感想</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-9 order-md-1">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card">
+                  <img src="img/yoga.gif" alt="ヨガ画像" class="card-img-top">
+                  <time class="date text-center" datatime="2019-00-00">
+                    <p>2019<br>00.00<br>WED</p>
+                  </time>
+                  <div class="card-body">
+                    <h3 class="card-title"><span class="hang">ピ</span>ラティスレッスン<br>を参加された方の声</h3>
+                    <h4 class="card-subtitle">70歳<strong class="man text-primary">男性</strong></h4>
+                    <p class="card-text">高齢者の運動教室に入り基礎的な運動を始めたのですが、今では週５日体を動かしています。週５日は多いようですが、一日のたった二時間だけ。その習慣が大切であり、自分の体は自分で作ることです！それにより自分の将来や未来に明るい兆しが見えました。</p>
+                    <a href="news.html" class="btn btn-outline-secondary">詳しく</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <img src="img/yoga.gif" alt="ヨガ画像" class="card-img-top">
+                  <time class="date text-center" datatime="2019-00-00">
+                    <p>2019<br>00.00<br>WED</p>
+                  </time>
+                  <div class="card-body">
+                    <h3 class="card-title"><span class="hang">エ</span>クササイズ<br>を参加された方の声</h3>
+                    <h4 class="card-subtitle">75歳<strong class="woman text-danger">女性</strong></h4>
+                    <p class="card-text">股関節の手術で人口股関節を入れてからは、歩くこともままならない状態でした。体の動かし方の基礎から始めて、運動を続けました。今では週５日体を動かしています。体操でどこが動いているか、今では体の状態がよくわかります！今の目標はもっとダンスが上手になることです。</p>
+                    <a href="news.html" class="btn btn-outline-secondary">詳しく</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--infomation-->
+    <section id="infomation">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-6">
+            <section id="profile">
+              <div class="profile-heading-box .rotate-heading">
+                <h3 class="profile-heading text-center">サービス<br class="d-none d-md-block">概要</h3>
+              </div>
+              <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <th>店名</th>
+                    <td>
+                      けんこうかん・ラ・テール
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>住所</th>
+                    <td>
+                      〒270－1154 　千葉県我孫子市白山1－23－2
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>電話番号</th>
+                    <td>
+                      04-7182-1120
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>サービス提供時間</th>
+                    <td>
+                      ■午前： 8:45～12:00（3時間15分） 月曜、火曜、水曜、金曜<br>
+                      ■午後：13:15～16:30（3時間15分）月曜、火曜、水曜、木曜
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>定休日</th>
+                    <td>祝祭日、お盆（8月13日～8月16日）、年末年始（12月29日～1月3日）</td>
+                  </tr>
+                  <tr>
+                    <th>定員</th>
+                    <td>午前、午後共に15名</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+          <div class="col-md-6">
+            <section id="access">
+              <div class="access-heading-box rotate-heading">
+                <h3 class="access-heading text-center">アクセス</h3>
+              </div>
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.211755969844!2d140.0073669152918!3d35.8683272272956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189d5b20e50523%3A0x1ba71de0d4d7e237!2z44GR44KT44GT44GG44GL44KTIOOCveODrOOCpOODpiDvvIjmoKrlvI_kvJrnpL7jg6rjgr3jgrnjg5XjgqfjgqLvvIk!5e0!3m2!1sen!2sjp!4v1573567362359!5m2!1sen!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+              <p>我孫子駅 南口から５分</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--main-end-->
+  <!--footer-->
+  <footer>
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-md-3">
+          <div class="footer-logo">
+            <a class="d-block text-center" href="#"><img class="img-footer" src="img/icon_logo.png" alt="フッターのロゴ画像"></a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <ul class="d-md-flex footer-social-media justify-content-md-end">
+            <li class="text-center"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="text-center"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><p class="tel text-center"><i class="fas fa-phone"></i>04-7183-1120</p></li>
+          </ul>
+          <ul class="nav footer-nav ml-md-auto d-flex flex-column flex-md-row text-center">
+            <li class="nav-item footer-nav-item">
+              <a href="facility.html" class="nav-link footer-nav-link">施設紹介</a>
+            </li>
+            <li class="nav-item footer-nav-item">
+              <a href="teacher.html" class="nav-link footer-nav-link">
+                職員・インストラクター <br class="d-block d-md-none">の紹介
+              </a>
+            </li>
+            <li class="nav-item footer-nav-item dropdown btn-group dropup">
+              <a id="footerNavbarDropdown" href="serviceall.html" class="nav-link footer-nav-link dropdown-toggle" data-toggle="dropdown">
+                事業内容
+              </a>
+              <div class="dropdown-menu">
+                <a href="care.html" class="dropdown-item">介護予防事業</a>
+                <a href="yoga.html" class="dropdown-item">運動教室・ヨガ教室</a>
+                <a href="cafe.html" class="dropdown-item">カフェ</a>
+              </div>
+            </li>
+            <li class="nav-item footer-nav-item d-md-none">
+              <a href="serviceall.html" class="nav-link footer-nav-link">事業内容</a>
+            </li>
+            <li class="nav-item footer-nav-item">
+              <a href="company.html" class="nav-link footer-nav-link">会社概要</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center copy">
+        <small>Copyright © 介護予防・通所介護なら我孫子市にあるけんこうかん ソレイユ. All Rights Reserved.</small>
+      </p>
+    </div>
+  </footer>
+  <!--page-top-btn-->
+  <div id="top_scroll">
+    <a href="#" id="page-top1"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
