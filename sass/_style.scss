@@ -1023,7 +1023,7 @@ footer {
     width: 300px;
     top: 30px;
     left: 50%;
-    transform: translateX(-50%);
+    @include PropertySetPrefix(transform,translateX(-50%));
     box-shadow: none;
   }
 }
