@@ -62,10 +62,7 @@ header {
 }
 .navbar {
   background-color: $orange;
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  padding: 1rem;
   @include sp() {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -818,9 +815,10 @@ footer {
   width: 150px;
   height: 150px;
   padding-top: 4rem;
+  margin: 0 auto;
   margin-bottom: 2.5rem;
   @include sp() {
-    width: 110%;
+    width: 100%;
     height: 70px;
     padding: 0;
   }
@@ -842,7 +840,8 @@ footer {
   padding-top: 6rem;
   @include sp() {
     padding: 0;
-    width: 110%;
+    width: 100%;
+    margin: 0 auto;
     margin-bottom: 1rem;
   }
 }
@@ -1020,10 +1019,9 @@ footer {
   line-height: 2;
   box-shadow: .9rem .9rem lighten($gray,15%),.9rem .4rem lighten($gray,15%);
   @include sp() {
-    width: 300px;
-    top: 30px;
-    left: 50%;
-    @include PropertySetPrefix(transform,translateX(-50%));
+    width: 100%;
+    top: 0;
+    left: 0;
     box-shadow: none;
   }
 }
@@ -1482,6 +1480,7 @@ footer {
 //pcのスケジュール
 .timetable-box-pc {
   padding: 2rem 0;
+  margin-top: -2rem;
   position: relative;
 }
 .weekline {
@@ -1500,28 +1499,66 @@ footer {
   &:not(:first-child) {
     margin-left: 2rem;
   }
-  &:nth-of-type(5) {//金曜の２個目
-    .week-box {
-      &:nth-of-type(2) {
-        .week-time-pink {
-          bottom: -3rem;
-        }
-      }
-    }
-  }
   .week {
     font-size: 3rem;
     background-color: $pink;
     color: $white;
     clip-path: polygon(20px 0,calc(100% - 20px) 0,100% 100%,0 100%);
+    @include pc() {
+      margin-top: 5rem;
+    }
   }
   .week-box {
     width: 100%;
     position: absolute;
     border-radius: 1rem;
+    .week-box-name {
+      margin: 2rem auto;
+      font-weight: bold;
+      padding: 0 .3rem;
+      font-size: 2rem;
+      @include sp() {
+        font-size: 2.5rem;
+      };
+    }
+    .week-time {
+      @include balloon($fontDark,up);
+      position: absolute;
+      bottom: 2%;
+      left: 50%;
+      color: $fontDark;
+      font-size: 1.3rem!important;
+      min-width: 100%;
+      @include PropertySetPrefix(transform,translateX(-50%));
+      @include sp() {
+        font-size: 2rem;
+      }
+    }//介護の吹き出し
+    .week-time-pink {
+      @extend .week-time;
+      bottom: -4.5rem;
+      @include sp() {
+        bottom: -5rem;
+      }
+    }//ヨガの吹き出し
+    .up {
+      @include pc() {
+        font-size: 1.3rem;
+        line-height: 1;
+        margin: 0;
+        padding: .5rem;
+      }
+    }
   }
+  //高さ
   .week-box-height-315 {
     height: 200px;
+  }
+  .week-box-height-120 {
+    height: 120px;
+  }
+  .week-box-height-105 {
+    height: 105px;
   }
   .week-box-height-60 {
     height: 60px;
@@ -1530,8 +1567,9 @@ footer {
     height: 75px;
   }
   .week-box-height-all {
-    height: 545px;
+    height: 720px;
   }
+  //介護かヨガか休館か
   .week-box-care {
     background-color: darken($orange,15%);
     color: $white;
@@ -1539,11 +1577,16 @@ footer {
   .week-box-yoga {
     background-color: lighten($pink,15%);
   }
+  .week-box-cafe {
+    background-color: darken($pink,20%);
+    color: $white;
+  }
   .week-box-break {
     background-color: $gray;
   }
+  //位置
   .week-box-8_00 {
-    top: 90px;
+    top: 115px;
     @include sp() {
       top: 90+25px;
     }
@@ -1554,6 +1597,12 @@ footer {
       top: 160px;
     }
   }
+  .week-box-9_00 {
+    top: 175px;
+    @include sp() {
+      top: 180px;
+    }
+  }
   .week-box-9_30 {
     top: 180px;
     @include sp() {
@@ -1561,15 +1610,21 @@ footer {
     }
   }
   .week-box-10_00 {
-    top: 215px;
+    top: 235px;
     @include sp() {
       top: 215+25px;
     }
   }
   .week-box-11_00 {
-    top: 275px;
+    top: 295px;
     @include sp() {
       top: 275+25px;
+    }
+  }
+  .week-box-13_00 {
+    top: 415px;
+    @include sp() {
+      top: 395+25px;
     }
   }
   .week-box-13_15 {
@@ -1585,7 +1640,7 @@ footer {
     }
   }
   .week-box-15_00 {
-    top: 515px;
+    top: 535px;
     @include sp() {
       top: 515+25px;
     }
@@ -1596,60 +1651,38 @@ footer {
       top: 530+25px;
     }
   }
+  .week-box-15_30 {
+    top: 565px;
+    @include sp() {
+      top: 530+30px;
+    }
+  }
+  .week-box-19_00 {
+    top: 775px;
+    @include sp() {
+      top: 750+30px;
+    }
+  }
+  .week-box-right {
+    right: -5rem;
+  }
+  .week-box-left {
+    left: -5.5rem;
+  }
   @include sp() {
     list-style: none;
     margin-left: auto;
     margin-right: 5rem;
   }
 }
-.xsmall {
-  font-size: 1.2rem;
-}
-.small {
-  font-size: 1.5rem;
-  line-height: 1;
-  margin-top: 1rem;
-}
-.large {
-  font-size: 2.5rem;
-}
-.week-box-name {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  margin: 2rem auto;
-  font-weight: bold;
-  @include sp() {
-    font-size: 2.5rem;
-  };
-}
-.week-time {
-  @include balloon($fontDark,up);
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  color: $fontDark;
-  font-size: 1.3rem!important;
-  min-width: 100%;
-  @include PropertySetPrefix(transform,translateX(-50%));
-  @include sp() {
-    font-size: 2rem;
-  }
-}
-.week-time-pink {
-  @extend .week-time;
-  bottom: -4.5rem;
-  @include sp() {
-    bottom: -3rem;
-  }
-}
 .timeline {
   margin-top: 5rem;
-}
-.line-box {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  p {
-    padding-top: 1rem;
+  .line-box {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    p {
+      padding-top: 1rem;
+    }
   }
 }
 .fa-clock {

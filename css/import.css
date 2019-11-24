@@ -38,6 +38,42 @@ a:hover, a:active, a:focus {
   -ms-transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+  .bg-sp-white {
+    background-color: #FFFFFF;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-sp-pink {
+    background-color: #f8e3e7;
+  }
+}
+
+.xsmall {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1024px) {
+  .small {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .small {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-top: 1rem;
+  }
+}
+
+.large {
+  font-size: 2.5rem;
+}
+
 .about-rotation, .facility-rotation, .teacher-rotation, .company-rotation, .care-rotation, .yoga-rotation, .cafe-rotation, .timetable-rotation, .news-contents-rotation, .serviceall-rotation {
   position: relative;
   padding-top: 8.5rem;
@@ -173,8 +209,8 @@ a:hover, a:active, a:focus {
 @media (max-width: 768px) {
   .news-rotation, .reviews-rotation, .charge-rotation {
     height: 80px;
-    width: 110%;
-    margin: 0 calc(50% - 50vw);
+    width: 100%;
+    margin: 0 auto;
     padding-top: 0px;
     background-color: #FFFFFF;
     border-radius: 0;
@@ -337,11 +373,7 @@ header {
 
 .navbar {
   background-color: #f0c54c;
-}
-
-.navbar .container {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -1377,12 +1409,13 @@ footer {
   width: 150px;
   height: 150px;
   padding-top: 4rem;
+  margin: 0 auto;
   margin-bottom: 2.5rem;
 }
 
 @media (max-width: 768px) {
   .profile-heading-box, .access-heading-box {
-    width: 110%;
+    width: 100%;
     height: 70px;
     padding: 0;
   }
@@ -1412,7 +1445,8 @@ footer {
 @media (max-width: 768px) {
   .access-heading-box {
     padding: 0;
-    width: 110%;
+    width: 100%;
+    margin: 0 auto;
     margin-bottom: 1rem;
   }
 }
@@ -1686,13 +1720,9 @@ footer {
 
 @media (max-width: 768px) {
   .company-eyecatch-title, .care-eyecatch-title, .yoga-eyecatch-title, .cafe-eyecatch-title {
-    width: 300px;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+    width: 100%;
+    top: 0;
+    left: 0;
     box-shadow: none;
   }
 }
@@ -2239,6 +2269,7 @@ footer {
 
 .timetable-box-pc {
   padding: 2rem 0;
+  margin-top: -2rem;
   position: relative;
 }
 
@@ -2265,15 +2296,17 @@ footer {
   margin-left: 2rem;
 }
 
-.weekline-item:nth-of-type(5) .week-box:nth-of-type(2) .week-time-pink {
-  bottom: -3rem;
-}
-
 .weekline-item .week {
   font-size: 3rem;
   background-color: #D34661;
   color: #FFFFFF;
   clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 100%, 0 100%);
+}
+
+@media (min-width: 1024px) {
+  .weekline-item .week {
+    margin-top: 5rem;
+  }
 }
 
 .weekline-item .week-box {
@@ -2282,8 +2315,98 @@ footer {
   border-radius: 1rem;
 }
 
+.weekline-item .week-box .week-box-name {
+  margin: 2rem auto;
+  font-weight: bold;
+  padding: 0 .3rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .weekline-item .week-box .week-box-name {
+    font-size: 2.5rem;
+  }
+}
+
+.weekline-item .week-box .week-time, .weekline-item .week-box .week-time-pink {
+  position: relative;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  background: #FFF;
+  border: solid 3px #333333;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  color: #333333;
+  font-size: 1.3rem !important;
+  min-width: 100%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+.weekline-item .week-box .week-time:before, .weekline-item .week-box .week-time-pink:before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-bottom: 12px solid #FFF;
+  z-index: 2;
+}
+
+.weekline-item .week-box .week-time:after, .weekline-item .week-box .week-time-pink:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-bottom: 14px solid #333333;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .weekline-item .week-box .week-time, .weekline-item .week-box .week-time-pink {
+    font-size: 2rem;
+  }
+}
+
+.weekline-item .week-box .week-time-pink {
+  bottom: -4.5rem;
+}
+
+@media (max-width: 768px) {
+  .weekline-item .week-box .week-time-pink {
+    bottom: -5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .weekline-item .week-box .up {
+    font-size: 1.3rem;
+    line-height: 1;
+    margin: 0;
+    padding: .5rem;
+  }
+}
+
 .weekline-item .week-box-height-315 {
   height: 200px;
+}
+
+.weekline-item .week-box-height-120 {
+  height: 120px;
+}
+
+.weekline-item .week-box-height-105 {
+  height: 105px;
 }
 
 .weekline-item .week-box-height-60 {
@@ -2295,7 +2418,7 @@ footer {
 }
 
 .weekline-item .week-box-height-all {
-  height: 545px;
+  height: 720px;
 }
 
 .weekline-item .week-box-care {
@@ -2307,12 +2430,17 @@ footer {
   background-color: #e28496;
 }
 
+.weekline-item .week-box-cafe {
+  background-color: #912237;
+  color: #FFFFFF;
+}
+
 .weekline-item .week-box-break {
   background-color: #CCCCCC;
 }
 
 .weekline-item .week-box-8_00 {
-  top: 90px;
+  top: 115px;
 }
 
 @media (max-width: 768px) {
@@ -2331,6 +2459,16 @@ footer {
   }
 }
 
+.weekline-item .week-box-9_00 {
+  top: 175px;
+}
+
+@media (max-width: 768px) {
+  .weekline-item .week-box-9_00 {
+    top: 180px;
+  }
+}
+
 .weekline-item .week-box-9_30 {
   top: 180px;
 }
@@ -2342,7 +2480,7 @@ footer {
 }
 
 .weekline-item .week-box-10_00 {
-  top: 215px;
+  top: 235px;
 }
 
 @media (max-width: 768px) {
@@ -2352,12 +2490,22 @@ footer {
 }
 
 .weekline-item .week-box-11_00 {
-  top: 275px;
+  top: 295px;
 }
 
 @media (max-width: 768px) {
   .weekline-item .week-box-11_00 {
     top: 300px;
+  }
+}
+
+.weekline-item .week-box-13_00 {
+  top: 415px;
+}
+
+@media (max-width: 768px) {
+  .weekline-item .week-box-13_00 {
+    top: 420px;
   }
 }
 
@@ -2382,7 +2530,7 @@ footer {
 }
 
 .weekline-item .week-box-15_00 {
-  top: 515px;
+  top: 535px;
 }
 
 @media (max-width: 768px) {
@@ -2401,6 +2549,34 @@ footer {
   }
 }
 
+.weekline-item .week-box-15_30 {
+  top: 565px;
+}
+
+@media (max-width: 768px) {
+  .weekline-item .week-box-15_30 {
+    top: 560px;
+  }
+}
+
+.weekline-item .week-box-19_00 {
+  top: 775px;
+}
+
+@media (max-width: 768px) {
+  .weekline-item .week-box-19_00 {
+    top: 780px;
+  }
+}
+
+.weekline-item .week-box-right {
+  right: -5rem;
+}
+
+.weekline-item .week-box-left {
+  left: -5.5rem;
+}
+
 @media (max-width: 768px) {
   .weekline-item {
     list-style: none;
@@ -2409,103 +2585,16 @@ footer {
   }
 }
 
-.xsmall {
-  font-size: 1.2rem;
-}
-
-.small {
-  font-size: 1.5rem;
-  line-height: 1;
-  margin-top: 1rem;
-}
-
-.large {
-  font-size: 2.5rem;
-}
-
-.week-box-name {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  margin: 2rem auto;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .week-box-name {
-    font-size: 2.5rem;
-  }
-}
-
-.week-time, .week-time-pink {
-  position: relative;
-  display: inline-block;
-  margin: 1em 0;
-  padding: 7px 10px;
-  min-width: 120px;
-  max-width: 100%;
-  background: #FFF;
-  border: solid 3px #333333;
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  color: #333333;
-  font-size: 1.3rem !important;
-  min-width: 100%;
-  transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-}
-
-.week-time:before, .week-time-pink:before {
-  content: "";
-  position: absolute;
-  top: -24px;
-  left: 50%;
-  margin-left: -15px;
-  border: 12px solid transparent;
-  border-bottom: 12px solid #FFF;
-  z-index: 2;
-}
-
-.week-time:after, .week-time-pink:after {
-  content: "";
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  margin-left: -17px;
-  border: 14px solid transparent;
-  border-bottom: 14px solid #333333;
-  z-index: 1;
-}
-
-@media (max-width: 768px) {
-  .week-time, .week-time-pink {
-    font-size: 2rem;
-  }
-}
-
-.week-time-pink {
-  bottom: -4.5rem;
-}
-
-@media (max-width: 768px) {
-  .week-time-pink {
-    bottom: -3rem;
-  }
-}
-
 .timeline {
   margin-top: 5rem;
 }
 
-.line-box {
+.timeline .line-box {
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
-.line-box p {
+.timeline .line-box p {
   padding-top: 1rem;
 }
 

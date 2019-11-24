@@ -30,6 +30,38 @@ a {
   @include PropertySetPrefix(transform,scale(1.1));
 }
 
+//臨時の背景色設定
+.bg-sp-white {
+  @include sp() {
+    background-color: $white;
+  }
+}
+.bg-sp-pink {
+  @include sp() {
+    background-color: lighten($pink,38%);
+  }
+}
+
+//臨時の文字サイズ
+.xsmall {
+  font-size: 1.2rem;
+}
+.small {
+  @include pc() {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-top: 1rem;
+  }
+  @include sp() {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-top: 1rem;
+  }
+}
+.large {
+  font-size: 2.5rem;
+}
+
 //回転
 .about-rotation {
   position: relative;
@@ -134,8 +166,8 @@ a {
   }
   @include sp() {
     height: 80px;
-    width: 110%;
-    margin: 0 calc(50% - 50vw);
+    width: 100%;
+    margin: 0 auto;
     padding-top: 0px;
     background-color: $white;
     @include PropertySetPrefix(border-radius,0);
