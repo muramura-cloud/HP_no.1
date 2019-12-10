@@ -13,6 +13,7 @@ body {
   font-size: 1rem;
   background-color: $white;
   transition: font-size 0.3s;
+  overflow-x: hidden;
 }
 a {
   @include LinkColor($white,$white);

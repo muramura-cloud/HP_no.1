@@ -49,6 +49,19 @@ $(function() {
       $("#top_scroll").fadeOut("slow");
     }
   });
+  //contact-entranceニョキッとボタン
+  $("#contact-entrance").hide();
+  $(window).scroll(function() {
+    if ($(window).width() > 768) {
+      if($(this).scrollTop()>=100) {
+        $("#contact-entrance").fadeIn("slow");
+      }else {
+        $("#contact-entrance").fadeOut("slow");
+      }
+    }else {
+      $("#contact-entrance").hide();
+    }
+  });
   //回転heading
   $(window).scroll(function() {
     for(var i=1;i<=5;i++) {
