@@ -58,7 +58,7 @@ header {
 .nav-contact-box {
   @include pc() {
     display: block;
-    width: 350px;
+    width: 250px;
     position: fixed;
     right: 0px;
     top: 87px;
@@ -378,7 +378,7 @@ footer {
 //--about--
 #about {
   position: relative;
-  height: 920px;
+  height: 1000px;
   padding: 3rem 0 6rem;
   background-color: lighten($pink,38%);
   @include sp() {
@@ -445,7 +445,7 @@ footer {
   padding: 3rem 2rem 2rem;
   @include sp() {
     font-size: 2rem;
-    padding-top: 6rem;
+    
     text-align: center;
   }
 }
@@ -528,6 +528,7 @@ footer {
   border: 2px solid $gray;
   padding-bottom: 3rem;
   box-shadow: 0 4px lighten($fontDark,15%);
+  z-index: 20;
   &:before {
     position: absolute;
     display: block;
@@ -1105,13 +1106,16 @@ footer {
 .care-eyecatch-title {
   @extend .company-eyecatch-title;
   left: -170px;
+  @include sp() {
+    left: 0;
+  }
 }
 .care-eyecatch-text {
   @extend .company-eyecatch-text;
   padding-top: 13rem;
   padding-bottom: 0;
   @include sp() {
-    padding-top: 0;
+    padding: 6rem 4rem 0;
   }
 }
 //care_end
@@ -1146,8 +1150,9 @@ footer {
 }
 .yoga-eyecatch-box {
   @extend .company-eyecatch-box;
+  height: 800px;
   @include sp() {
-    height: 400px;
+    height: 760px;
   }
 }
 .yoga-eyecatch-right-box {
@@ -1157,16 +1162,18 @@ footer {
   @extend .company-eyecatch-title;
   left: -450px;
   font-size: 3.5rem;
+  @include sp() {
+    left: 0;
+    font-size: 2rem;
+  }
 }
 .yoga-eyecatch-text {
   @extend .company-eyecatch-text;
   padding-top: 25rem;
-  font-size: 2.5rem;
   padding-bottom: 2rem;
   @include sp() {
-    padding-top: 0;
+    padding: 140px 3rem 1rem;
     font-size: 1.8rem;
-    padding-bottom: 1rem;
     margin-bottom: 0;
   }
 }
@@ -1348,7 +1355,7 @@ footer {
 .cafe-eyecatch-box {
   @extend .company-eyecatch-box;
   @include sp() {
-    height: 400px;
+    height: 450px;
   }
 }
 .cafe-eyecatch-right-box {
@@ -1357,11 +1364,12 @@ footer {
 .cafe-eyecatch-title {
   @extend .company-eyecatch-title;
   top: 12rem;
-  left: 50%;
-  @include PropertySetPrefix(transform,translateX(-50%));
   font-size: 3.5rem;
+  @include pc() {
+    left: calc(50% - 150px);
+  }
   @include sp() {
-    top: 5rem;
+    top: 0;
   }
 }
 .cafe-eyecatch-text {
@@ -1370,7 +1378,9 @@ footer {
   font-size: 1.8rem;
   padding-bottom: 0;
   @include sp() {
-    padding-top: 15rem;
+    padding-top: 10rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }
 //menu

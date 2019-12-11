@@ -369,7 +369,7 @@ header {
 @media (min-width: 1024px) {
   .nav-contact-box {
     display: block;
-    width: 350px;
+    width: 250px;
     position: fixed;
     right: 0px;
     top: 87px;
@@ -802,7 +802,7 @@ footer {
 
 #about {
   position: relative;
-  height: 920px;
+  height: 1000px;
   padding: 3rem 0 6rem;
   background-color: #f8e3e7;
 }
@@ -895,7 +895,6 @@ footer {
 @media (max-width: 768px) {
   .about-title, .company-eyecatch-title, .care-eyecatch-title, .yoga-eyecatch-title, .cafe-eyecatch-title {
     font-size: 2rem;
-    padding-top: 6rem;
     text-align: center;
   }
 }
@@ -997,6 +996,7 @@ footer {
   border: 2px solid #CCCCCC;
   padding-bottom: 3rem;
   box-shadow: 0 4px #595959;
+  z-index: 20;
 }
 
 .service-box:before, .serviceall-contents:before {
@@ -1814,6 +1814,12 @@ footer {
   left: -170px;
 }
 
+@media (max-width: 768px) {
+  .care-eyecatch-title {
+    left: 0;
+  }
+}
+
 .care-eyecatch-text {
   padding-top: 13rem;
   padding-bottom: 0;
@@ -1821,7 +1827,7 @@ footer {
 
 @media (max-width: 768px) {
   .care-eyecatch-text {
-    padding-top: 0;
+    padding: 6rem 4rem 0;
   }
 }
 
@@ -1861,9 +1867,13 @@ footer {
   }
 }
 
+.yoga-eyecatch-box {
+  height: 800px;
+}
+
 @media (max-width: 768px) {
   .yoga-eyecatch-box {
-    height: 400px;
+    height: 760px;
   }
 }
 
@@ -1872,17 +1882,22 @@ footer {
   font-size: 3.5rem;
 }
 
+@media (max-width: 768px) {
+  .yoga-eyecatch-title {
+    left: 0;
+    font-size: 2rem;
+  }
+}
+
 .yoga-eyecatch-text {
   padding-top: 25rem;
-  font-size: 2.5rem;
   padding-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
   .yoga-eyecatch-text {
-    padding-top: 0;
+    padding: 140px 3rem 1rem;
     font-size: 1.8rem;
-    padding-bottom: 1rem;
     margin-bottom: 0;
   }
 }
@@ -2111,23 +2126,24 @@ footer {
 
 @media (max-width: 768px) {
   .cafe-eyecatch-box {
-    height: 400px;
+    height: 450px;
   }
 }
 
 .cafe-eyecatch-title {
   top: 12rem;
-  left: 50%;
-  transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   font-size: 3.5rem;
+}
+
+@media (min-width: 1024px) {
+  .cafe-eyecatch-title {
+    left: calc(50% - 150px);
+  }
 }
 
 @media (max-width: 768px) {
   .cafe-eyecatch-title {
-    top: 5rem;
+    top: 0;
   }
 }
 
@@ -2139,7 +2155,9 @@ footer {
 
 @media (max-width: 768px) {
   .cafe-eyecatch-text {
-    padding-top: 15rem;
+    padding-top: 10rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }
 
